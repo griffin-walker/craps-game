@@ -1,0 +1,124 @@
+body {
+    background-color: #0c104e;
+    font-family: "Montserrat";
+    color: white;
+    margin: auto;
+    width: 60%;
+    background-color: #0c104e;
+    font-family: "Montserrat";
+}
+
+canvas {
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    width: 60%;
+    align-content: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#board td,
+tr {
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+    color: gold;
+}
+
+#board tbody tr:nth-child(1) {
+    border: 0px;
+    font-size: 30px;
+    color: white;
+}
+
+#board tbody tr:nth-child(2) {
+    height: 200px;
+}
+
+#board tbody tr:nth-child(3) {
+    height: 75px;
+}
+
+#board tr:nth-child(2) td:hover {
+    background-color: grey;
+}
+
+#board tr:nth-child(4) td:hover {
+    background-color: grey;
+}
+
+.leftsidenav {
+    width: 160px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.rightsidenav {
+    width: 160px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    /* Black */
+    /* Disable horizontal scroll */
+    padding-top: 50px;
+    padding-right: 25px;
+    overflow-wrap: break-word;
+}
+
+#roll-sequence {
+    color: white;
+}
+
+.dice-roll {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 50px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+.clear-roll-sequence {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.roll-result {
+    color: white;
+    padding: 50px 50px;
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+}

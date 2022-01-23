@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script defer src="src/index.js"></script>
+
+<title>
+    Craps
+</title>
+
+
+<h1>Play Craps</h1>
+
+
+<div class="leftsidenav">
+    <button id="roll" class="dice-roll" onclick="play()">Roll The Dice</button>
+    <div id="roll-result" class="roll-result"></div>
+    <p id="bankroll">Bank Roll : </p>
+</div>
+
+<div class="rightsidenav">
+    <button id="clear-roll-sequence" class="clear-roll-sequence" onclick="clearRollSequence()">Clear Roll Sequence</button>
+    <p id="roll-sequence"></p>
+
+</div>
+
+<div id="body">
+    <table id="board">
+        <tr>
+            <td colspan="6">The Board</td>
+            <tr>
+                <td id="4" class="point">4</td>
+                <td id="5" class="point">5</td>
+                <td id="6" class="point">6</td>
+                <td id="8" class="point">8</td>
+                <td id="9" class="point">9</td>
+                <td id="10" class="point">10</td>
+            </tr>
+            <tr>
+                <td colspan="6 "> Field (2, 3, 4, 9, 10, 11 12)</td>
+            </tr>
+            <tr>
+                <td colspan="6" onclick="betPassLine()" id="passline"> Pass Line </td>
+            </tr>
+    </table>
+</div>
+
+
+<div id="charting ">
+    <canvas id="myChart"></canvas>
+</div>
